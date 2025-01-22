@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<style type="text/css">
+		.png{
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(2.jpg); background-size: 100% 100%; height: 729px;" class="col-12">
+		<div class="png" style="width: 100px; height: 280px; background: lightblue; padding-left: 15px;">
+			<p class="sd">Ручка</p>
+			<p class="sa">Книга</p>
+			<p class="sf">Яйцо</p>
+			<p class="sg">Кольцо</p>
+			<p class="sh">Телефон</p>
+			<p >Счет:</p>
+			<p class="p "></p>
+
+		</div>
+		<img src="1.png" class="png pf" style="width: 80px; left: 200px; top: 530px">
+		<img src="4.png" class="png pg" style="width: 80px; left: 900px; top: 270px;">
+		<img src="5.png" class="png ph" style="width: 40px; left: 200px; top: -200;">
+		<img src="6.png" class="png pj" style="width: 80px; left: 650px; top: 550px;">
+		<img src="7.png" class="png pk" style="width: 40px; left: 1300px; top: 600px;">
+		
+	</div>
+
+	<script type="text/javascript">
+		let nudner = 0
+		document.querySelector(".p").innerHTML = nudner
+
+		document.querySelector(".pf").onclick = function() {
+			document.querySelector(".pf").style.display = 'none'
+			alert("Вы нашли!")
+			nudner = nudner + 1
+			document.querySelector(".p").innerHTML = nudner
+			document.querySelector(".sa").style.textDecoration = 'line-through'
+		}
+		document.querySelector(".pg").onclick = function() {
+			document.querySelector(".pg").style.display = 'none'
+			alert("Вы нашли!")
+			nudner = nudner + 1
+			document.querySelector(".p").innerHTML = nudner
+			document.querySelector(".sh").style.textDecoration = 'line-through'
+		}
+		document.querySelector(".ph").onclick = function() {
+			document.querySelector(".ph").style.display = 'none'
+			alert("Вы нашли!")
+			nudner = nudner + 1
+			document.querySelector(".p").innerHTML = nudner
+			document.querySelector(".sd").style.textDecoration = 'line-through'
+		}
+		document.querySelector(".pj").onclick = function() {
+			document.querySelector(".pj").style.display = 'none'
+			alert("Вы нашли!")
+			nudner = nudner + 1
+			document.querySelector(".p").innerHTML = nudner
+			document.querySelector(".sf").style.textDecoration = 'line-through'
+		}
+		document.querySelector(".pk").onclick = function() {
+			document.querySelector(".pk").style.display = 'none'
+			alert("Вы нашли!")
+			nudner = nudner + 10
+			document.querySelector(".p").innerHTML = nudner
+			document.querySelector(".sg").style.textDecoration = 'line-through'
+		}
+	</script>
+</body>
+</html>
